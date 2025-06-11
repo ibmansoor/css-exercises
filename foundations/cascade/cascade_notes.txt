@@ -1,0 +1,29 @@
+
+
+more specific = higher priority
+
+    inline  ->   # id  ->   .class  ->  type    ->  * (universal selector)
+
+more selectors = more specific
+
+
+inheritance:
+    direct rules > inherited rules
+
+
+If two rules have equal specificity, the last one written in the CSS file wins.
+
+
+=======================================================================
+
+
+Specificity = (a, b, c, d)
+    Where:
+
+    a = inline styles (e.g., style="") → usually 0 or 1
+
+    b = number of ID selectors
+
+    c = number of class, attribute, or pseudo-class selectors
+
+    d = number of type or pseudo-element selectors
